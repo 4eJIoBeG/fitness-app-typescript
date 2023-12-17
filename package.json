@@ -1,13 +1,14 @@
 {
   "name": "fitness-app-typesctipt",
-	"homepage": "https://4ejiobeg.github.io/fitness-app-typesctipt",
+  "homepage": "https://4ejiobeg.github.io/fitness-app-typesctipt",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+		"predeploy":"npm run build",
+		"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -26,6 +27,7 @@
     "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.9",
